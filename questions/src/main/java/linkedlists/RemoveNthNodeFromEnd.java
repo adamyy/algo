@@ -2,14 +2,9 @@ package linkedlists;
 
 import lib.ListNode;
 
-interface Solution {
-  ListNode removeNthFromEnd(ListNode head, int n);
-}
-
 // https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/
 // Given a linked list, remove the nth node from the end of list and return its head.
-public class RemoveNthNodeFromEnd implements Solution {
-  @Override
+public class RemoveNthNodeFromEnd {
   public ListNode removeNthFromEnd(ListNode head, int n) {
     ListNode fast = head;
     ListNode slow = head;
