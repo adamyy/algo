@@ -20,12 +20,16 @@ public class IntersectionTest {
 
   @Test
   public void intersection() {
-    ListNode intersection = ListNode.fromArray(new int[] { 1,2,3 });
-    ListNode first = new ListNode(0, intersection);
+    ListNode intersection = ListNode.fromArray(new int[] { 2,3,4 });
+    ListNode first = new ListNode(0, new ListNode(1, intersection));
     ListNode second = new ListNode(1, intersection);
     assertThat(Intersection.intersection(first, second)).isEqualTo(intersection);
 
-    ListNode third = ListNode.fromArray(new int[] { 0,1,2,3 });
+    ListNode third = ListNode.fromArray(new int[] { 0,1,2,3,4 });
     assertThat(Intersection.intersection(first, third)).isNull();
+
+    ListNode end = new ListNode(1);
+    ListNode start = new ListNode(0, end);
+    assertThat(Intersection.intersection(end, start)).isEqualTo(end);
   }
 }

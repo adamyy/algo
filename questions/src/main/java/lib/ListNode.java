@@ -32,7 +32,7 @@ public class ListNode {
    * @param arr
    * @return head of the linked list
    */
-  public static ListNode fromArray(int[] arr) {
+  public static ListNode fromArray(int... arr) {
     if (arr.length == 0) return null;
     ListNode head = new ListNode(arr[0]);
     ListNode tail = head;

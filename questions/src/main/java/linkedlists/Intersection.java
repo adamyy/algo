@@ -26,9 +26,9 @@ public class Intersection {
     if (firstLength == 0 || secondLength == 0) return null;
 
     if (firstLength > secondLength) {
-      step(first, firstLength - secondLength);
+      first = step(first, firstLength - secondLength);
     } else {
-      step(second, secondLength - firstLength);
+      second = step(second, secondLength - firstLength);
     }
 
     int length = Math.min(firstLength, secondLength);
@@ -42,8 +42,9 @@ public class Intersection {
     return null;
   }
 
-  private static void step(ListNode node, int steps) {
+  private static ListNode step(ListNode node, int steps) {
     while (steps-- > 0) node = node.next;
+    return node;
   }
 
   private static int length(ListNode node) {
