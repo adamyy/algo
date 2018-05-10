@@ -1,4 +1,4 @@
-package sorting;
+package jparkie.sorting;
 
 public class RadixSort {
   public static int[] radixSort(int[] S) {

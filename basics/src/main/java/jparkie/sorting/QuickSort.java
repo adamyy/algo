@@ -1,4 +1,4 @@
-package sorting;
+package jparkie.sorting;
 
 public class QuickSort {
   public static int[] quickSort(int[] S) {

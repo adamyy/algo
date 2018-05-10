@@ -12,7 +12,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="algo" target="1.7" />
-      <module name="basics" target="1.7" />
+      <module name="basics" target="8" />
       <module name="problems" target="1.7" />
       <module name="questions" target="8" />
     </bytecodeTargetLevel>

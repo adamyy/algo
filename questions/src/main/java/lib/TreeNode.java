@@ -4,9 +4,15 @@ public class TreeNode {
   public int val;
   public TreeNode left;
   public TreeNode right;
+  public TreeNode parent;
 
   public TreeNode(int val) {
     this.val = val;
+  }
+
+  public TreeNode(int val, TreeNode parent) {
+    this.val = val;
+    this.parent = parent;
   }
 
   public TreeNode(int val, TreeNode left, TreeNode right) {
@@ -16,17 +22,17 @@ public class TreeNode {
   }
 
   public static TreeNode buildTreeFromArray(Integer... arr) {
-    return buildTreeFromArrayRecursive(1, arr);
+    return buildTreeFromArrayRecursive(null, 1, arr);
   }
 
-  private static TreeNode buildTreeFromArrayRecursive(int index, Integer... arr) {
+  private static TreeNode buildTreeFromArrayRecursive(TreeNode parent, int index, Integer... arr) {
     if (index > arr.length) return null;
     if (arr[index - 1] == null) return null;
 
-    TreeNode node = new TreeNode(arr[index - 1]);
+    TreeNode node = new TreeNode(arr[index - 1], parent);
 
-    node.left = buildTreeFromArrayRecursive(index * 2, arr);
-    node.right = buildTreeFromArrayRecursive(index * 2 + 1, arr);
+    node.left = buildTreeFromArrayRecursive(node, index * 2, arr);
+    node.right = buildTreeFromArrayRecursive(node, index * 2 + 1, arr);
 
     return node;
   }

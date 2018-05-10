@@ -1,4 +1,4 @@
-package searching;
+package jparkie.searching;
 
 public class BinarySearch {
   public static int binarySearch(int[] S, int key) {
