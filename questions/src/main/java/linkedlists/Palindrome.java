@@ -72,4 +72,17 @@ public class Palindrome {
 
     return res;
   }
+
+  public static boolean isPalindromeSimplified(ListNode head) {
+    return head == null || isPalindromeRecursive(head, head) != null;
+  }
+
+  private static ListNode isPalindromeRecursive(ListNode node, ListNode head) {
+    if (node == null) return head;
+    ListNode result = isPalindromeRecursive(node.next, head);
+    if (result == null) return null;
+    if (result.val != node.val) return null;
+    if (result.next != null) return result.next;
+    return result;
+  }
 }
