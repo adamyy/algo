@@ -23,33 +23,27 @@ import java.util.HashMap;
  *    15   7
  */
 public class BuildTreeFromTraversal {
-  public static TreeNode buildTree(int[] preorder, int[] inorder) {
-    if (preorder.length == 0 || inorder.length == 0 || inorder.length != preorder.length) return null;
+  public static TreeNode buildTree(int[] preOrder, int[] inOrder) {
+    if (preOrder.length == 0 || inOrder.length == 0 || inOrder.length != preOrder.length) return null;
 
-    HashMap<Integer, Integer> inorderIndex = new HashMap<>();
-    for (int index = 0; index < inorder.length; index ++) inorderIndex.put(inorder[index], index);
+    HashMap<Integer, Integer> inOrderIndex = new HashMap<>();
+    for (int index = 0; index < inOrder.length; index++) inOrderIndex.put(inOrder[index], index);
 
-    return buildTree(0, 0, inorder.length, preorder, inorder, inorderIndex);
+    return buildTree(0, 0, inOrder.length, preOrder, inOrder, inOrderIndex);
   }
 
-  private static TreeNode buildTree(
-      int preorderStart,
-      int inorderStart,
-      int length,
-      int[] preorder,
-      int[] inorder,
-      HashMap<Integer, Integer> inorderIndices) {
+  private static TreeNode buildTree(int preStart, int inStart, int length, int[] preOrder, int[] inOrder, HashMap<Integer, Integer> inOrderIndex) {
     if (length == 0) return null;
 
-    int rootVal = preorder[preorderStart];
+    int rootVal = preOrder[preStart];
     TreeNode root = new TreeNode(rootVal);
     if (length == 1) return root;
 
-    int rootInorderIndex = inorderIndices.get(rootVal);
-    int leftLength = rootInorderIndex - inorderStart;
+    int rootInorderIndex = inOrderIndex.get(rootVal);
+    int leftLength = rootInorderIndex - inStart;
     int rightLength = length - 1 - leftLength;
-    root.left = buildTree(preorderStart + 1, inorderStart, leftLength, preorder, inorder, inorderIndices);
-    root.right = buildTree(preorderStart + 1 + leftLength, rootInorderIndex + 1, rightLength, preorder, inorder, inorderIndices);
+    root.left = buildTree(preStart + 1, inStart, leftLength, preOrder, inOrder, inOrderIndex);
+    root.right = buildTree(preStart + 1 + leftLength, rootInorderIndex + 1, rightLength, preOrder, inOrder, inOrderIndex);
     return root;
   }
 }

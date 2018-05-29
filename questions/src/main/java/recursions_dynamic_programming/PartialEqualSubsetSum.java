@@ -49,22 +49,24 @@ public class PartialEqualSubsetSum {
     int targetSum = totalSum >> 1;
 
     // solution[i][j] -> can we partition using the first i numbers to make sum j
-    boolean[][] solution = new boolean[nums.length + 1][totalSum + 1];
+    boolean[][] solution = new boolean[nums.length + 1][targetSum + 1];
 
     // base cass
     // empty set for sum = 0
-    for (int i = 0; i < nums.length + 1; i++) solution[i][0] = true;
+    for (int i = 0; i <= nums.length; i++) solution[i][0] = true;
     // we can't make any subset for nonzero sum
-    for (int i = 1; i < totalSum + 1; i++) solution[0][i] = false;
+    for (int i = 1; i <= targetSum; i++) solution[0][i] = false;
 
     for (int i = 1; i <= nums.length; i++) {
       for (int j = 1; j <= targetSum; j++) {
         // if we can make sum j without using the ith number,
         // ofc we can make it with ith number (excluded from the subset) as well
         solution[i][j] = solution[i - 1][j];
-        if (!solution[i][j] && j >= nums[i - 1]) solution[i][j] = solution[i - 1][j - nums[i - 1]];
+        if (j >= nums[i - 1]) {
+          solution[i][j] = solution[i][j] || solution[i - 1][j - nums[i - 1]];
+        }
       }
     }
-    return solution[nums.length][totalSum];
+    return solution[nums.length][targetSum];
   }
 }

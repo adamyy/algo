@@ -68,4 +68,8 @@ public class TargetSum {
     }
     return solution[nums.length][target];
   }
+
+  public static void main(String[] args) {
+
+  }
 }

@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Stack;
+import java.util.regex.Pattern;
 
 /**
  * Given a binary tree, return the preOrder traversal of its nodes' values.

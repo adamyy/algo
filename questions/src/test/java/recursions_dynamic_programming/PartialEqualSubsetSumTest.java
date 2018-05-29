@@ -11,4 +11,10 @@ public class PartialEqualSubsetSumTest {
     assertThat(PartialEqualSubsetSum.canPartition(new int[]{1, 5, 11, 5})).isTrue();
     assertThat(PartialEqualSubsetSum.canPartition(new int[]{1, 2, 3, 5})).isFalse();
   }
+
+  @Test
+  public void canPartitionExplained() {
+    assertThat(PartialEqualSubsetSum.canPartitionExplained(new int[]{1, 5, 11, 5})).isTrue();
+    assertThat(PartialEqualSubsetSum.canPartitionExplained(new int[]{1, 2, 3, 5})).isFalse();
+  }
 }
