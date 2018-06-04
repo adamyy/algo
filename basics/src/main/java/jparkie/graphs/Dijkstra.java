@@ -1,7 +1,5 @@
 package jparkie.graphs;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.util.*;
 
 public class Dijkstra {
@@ -79,7 +77,7 @@ public class Dijkstra {
     }
 
     @Override
-    public int compareTo(@NotNull VertexDistancePair o) {
+    public int compareTo(VertexDistancePair o) {
       return Integer.compare(this.distance, o.distance);
     }
   }

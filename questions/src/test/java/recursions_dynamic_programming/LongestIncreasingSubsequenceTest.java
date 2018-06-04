@@ -7,7 +7,9 @@ import static com.google.common.truth.Truth.*;
 public class LongestIncreasingSubsequenceTest {
 
   @Test
-  public void lengthOfLIS() {
+  public void lengthOfLISTails() {
+    assertThat(LongestIncreasingSubsequence.lengthOfLISTails(new int[]{10, 9, 2, 5, 3, 7, 101, 18}))
+        .isEqualTo(4);
   }
 
   @Test

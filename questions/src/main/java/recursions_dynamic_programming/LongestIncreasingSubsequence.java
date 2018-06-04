@@ -1,7 +1,5 @@
 package recursions_dynamic_programming;
 
-import java.util.Arrays;
-
 /**
  * Given an unsorted array of integers, find the length of longest increasing subsequence.
  * <p>
@@ -15,10 +13,6 @@ import java.util.Arrays;
  * Follow up: Could you improve it to O(n log n) time complexity?
  */
 public class LongestIncreasingSubsequence {
-  public static int lengthOfLIS(int[] nums) {
-    return 0;
-  }
-
   /**
    * Constant space
    * O(n^2) runtime
