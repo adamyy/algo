@@ -9,18 +9,16 @@ Full credit to [jparkie](https://github.com/jparkie).
 
 ### questions
 
-- [ ] Arrays and Strings
+- Arrays and Strings
 
-- [ ] HashMaps and HashTables
+- HashMaps and HashTables
 
-- [x] LinkedLists
+- LinkedLists
 
-- [x] Stacks and Queues
+- Stacks and Queues
 
-- [ ] Trees
+- Trees
 
-- [ ] Graphs
+- Graphs
 
-- [ ] Recursions
-
-- [ ] Dynamic Programming
+- Dynamic Programming

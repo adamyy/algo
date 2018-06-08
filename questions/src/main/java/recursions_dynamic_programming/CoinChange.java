@@ -22,4 +22,19 @@ public class CoinChange {
     }
     return memo[n];
   }
+
+  public static int coinChangeKnapsack(int n, int[] coins) {
+    int[] memo = new int[n + 1];
+    memo[0] = 1;
+    memo[n] = -1;
+
+    for (int i = 1; i <= n; i++) {
+      for (int coin: coins) {
+        if (i - coin < 0) continue;
+        memo[i] += memo[i - coin];
+      }
+    }
+
+    return memo[n];
+  }
 }
