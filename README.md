@@ -1,24 +1,16 @@
 # algo
 
-Algorithm notes and solutions for algorithm questions from CTCI and leetcode.
+when i hate to be complete trash at technical interviews
 
 ### basics
 
-- Code grabbed from [Programming Notebook by jparkie](https://github.com/jparkie/Programming-Notebook) for quick reference lookup. 
+- sample code grabbed from [Programming Notebook by jparkie](https://github.com/jparkie/Programming-Notebook) for quick reference lookup. 
 Full credit to [jparkie](https://github.com/jparkie).
 
 ### questions
 
-- Arrays and Strings
+- algorithm questions grabbed from CTCI and Leetcode.
 
-- HashMaps and HashTables
+### classics
 
-- LinkedLists
-
-- Stacks and Queues
-
-- Trees
-
-- Graphs
-
-- Dynamic Programming
+- some topics that has a classic name to it (i think)
