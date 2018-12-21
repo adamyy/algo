@@ -4,7 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/algo.iml" filepath="$PROJECT_DIR$/algo.iml" />
       <module fileurl="file://$PROJECT_DIR$/basics/basics.iml" filepath="$PROJECT_DIR$/basics/basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/challenges/challenges.iml" filepath="$PROJECT_DIR$/challenges/challenges.iml" />
       <module fileurl="file://$PROJECT_DIR$/classics/classics.iml" filepath="$PROJECT_DIR$/classics/classics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/epi/epi.iml" filepath="$PROJECT_DIR$/epi/epi.iml" />
       <module fileurl="file://$PROJECT_DIR$/questions/questions.iml" filepath="$PROJECT_DIR$/questions/questions.iml" />
     </modules>
   </component>

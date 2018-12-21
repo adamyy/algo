@@ -12,6 +12,8 @@
         <module>basics</module>
         <module>questions</module>
         <module>classics</module>
+        <module>epi</module>
+      <module>challenges</module>
     </modules>
 
     <build>

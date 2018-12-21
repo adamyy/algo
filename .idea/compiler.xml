@@ -7,14 +7,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="basics" />
+        <module name="challenges" />
         <module name="classics" />
+        <module name="epi" />
         <module name="questions" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="algo" target="8" />
       <module name="basics" target="8" />
+      <module name="challenges" target="8" />
       <module name="classics" target="8" />
+      <module name="epi" target="8" />
       <module name="questions" target="8" />
     </bytecodeTargetLevel>
   </component>

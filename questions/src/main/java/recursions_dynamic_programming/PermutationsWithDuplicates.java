@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Permutations with Dups: Write a method to compute all permutations of a string whose charac­ters are not necessarily unique.
+ * Permutations with Dups: Write a method to compute all permutations of a string whose characters are not necessarily unique.
  * The list of permutations should not have duplicates.
  */
 public class PermutationsWithDuplicates {
