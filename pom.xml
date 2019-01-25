@@ -13,7 +13,8 @@
         <module>questions</module>
         <module>classics</module>
         <module>epi</module>
-      <module>challenges</module>
+        <module>challenges</module>
+        <module>interviews</module>
     </modules>
 
     <build>

@@ -1,7 +1,5 @@
 package jparkie.graphs;
 
-import org.jetbrains.annotations.NotNull;
-
 public class WeightedEdge implements Comparable<WeightedEdge> {
   public final int start;
   public final int end;
@@ -14,7 +12,7 @@ public class WeightedEdge implements Comparable<WeightedEdge> {
   }
 
   @Override
-  public int compareTo(@NotNull WeightedEdge o) {
+  public int compareTo(WeightedEdge o) {
     return 0;
   }
 }
