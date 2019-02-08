@@ -1,5 +1,6 @@
-package chapter6;
+package array;
 
+import array.BuyAndSellAStockTwice;
 import org.junit.Test;
 
 import java.util.Arrays;

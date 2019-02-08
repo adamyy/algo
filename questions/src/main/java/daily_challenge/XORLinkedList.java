@@ -9,6 +9,16 @@ package daily_challenge;
  *  it has an add(element) which adds the element to the end,
  *  and a get(index) which returns the node at index.
  */
-public class XORLinkedList {
-  // TODO
+public class XORLinkedList<T> {
+  static class Node<T> {
+
+  }
+
+  public void add(Node<T> element) {
+
+  }
+
+  public T get(int index) {
+    return null;
+  }
 }

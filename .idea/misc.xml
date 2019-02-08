@@ -4,16 +4,17 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/basics/pom.xml" />
+        <option value="$PROJECT_DIR$/interviews/pom.xml" />
+        <option value="$PROJECT_DIR$/classics/pom.xml" />
+        <option value="$PROJECT_DIR$/questions/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/basics/pom.xml" />
         <option value="$PROJECT_DIR$/challenges/pom.xml" />
-        <option value="$PROJECT_DIR$/classics/pom.xml" />
-        <option value="$PROJECT_DIR$/interviews/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/problems/pom.xml" />
-        <option value="$PROJECT_DIR$/questions/pom.xml" />
       </set>
     </option>
   </component>
