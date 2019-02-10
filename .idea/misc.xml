@@ -13,6 +13,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/challenges/pom.xml" />
+        <option value="$PROJECT_DIR$/epi/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/problems/pom.xml" />
       </set>

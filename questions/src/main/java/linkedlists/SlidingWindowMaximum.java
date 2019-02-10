@@ -1,6 +1,6 @@
 package linkedlists;
 
-import techniques.ArrayIndex;
+import tags.ArrayIndex;
 
 import java.util.LinkedList;
 

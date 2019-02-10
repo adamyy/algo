@@ -8,7 +8,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="basics" />
         <module name="classics" />
-        <module name="epi" />
         <module name="interviews" />
         <module name="questions" />
       </profile>
