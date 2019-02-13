@@ -20,10 +20,9 @@ public class DecodeString {
     return decodeHelper(message, 0, dp);
   }
 
+  // at each step, either 1 digit can be decoded, or 2 digits
+  // decode(message) = decode(message - 1 digit) + decode(message - 2 digits)
   private static int decodeHelper(String message, int start, int[] dp) {
-    // at each step, either 1 digit can be decoded, or 2 digits
-    // decode(message) = decode(message - 1 digit) + decode(message - 2 digits)
-    if (message.length() < start) return 0;
     if (message.length() == start) return 1; // we exhausted the message
     if (message.charAt(start) == '0') return 0; // we cannot decode this message
     if (dp[start] != -1) return dp[start]; // cache hit
